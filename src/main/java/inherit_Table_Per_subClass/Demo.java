@@ -1,4 +1,7 @@
-package inherit;
+package inherit_Table_Per_subClass;
+import inherit.A;
+import inherit.B;
+import inherit.C;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -7,16 +10,16 @@ import javax.persistence.Persistence;
 
 public class Demo {
     public static void main(String[] args) {
-        A a=new A();
+        A1 a=new A1();
         a.setId(1);
         a.setName("A");
-        
-        B b=new B();
+
+        B1 b=new B1();
         b.setId(2);
         b.setName("B");
         b.setValueOne("b");
 
-        C c=new C();
+        C1 c=new C1();
         c.setId(3);
         c.setName("C");
         c.setValueTwo("c");

@@ -1,11 +1,8 @@
-package inherit;
-
+package inherit_Table_Per_subClass;
 import javax.persistence.*;
 @Entity
-@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
-@DiscriminatorColumn(name="type")
-@DiscriminatorValue(value = "A")
-public class A {
+@Inheritance(strategy = InheritanceType.JOINED)
+public class A1 {
     @Id
     private int id;
     private String name;
